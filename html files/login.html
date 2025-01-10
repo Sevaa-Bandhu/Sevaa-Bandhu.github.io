@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../stylesheets/styleLogin.css" />
+    <title>Login-Rozgaar Bandhu</title>
+</head>
+<body>
+    <main class="login-main">
+    <section class="login-container" id="login-container">
+        <div class="login-text login-element">
+            <p>Welcome Back, <big>Bandhu!</big></p>
+            <br>
+            <p>Your Employment Companion, Every Step of the Way.</p>
+        </div>
+        <div class="login-form login-element">
+            <legend class="logo">
+                <img src="../images/icon.ico" alt="logo" class="icon-img">
+                <br>
+                Login to Rozgaar Bandhu
+            </legend>
+            <form>
+                <div class="mobile-cotainer">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="mobile-input" type="number" name="mobile" id="mobile" placeholder="Mob. no." maxlength="10" required/>
+                </div>
+                <div class="password-container">
+                    <i class="fa-solid fa-key"></i>
+                    <input class="password-input" type="password" name="login-password" id="login-password" placeholder="Password" minlength="10" required/>
+                </div>
+
+                <div class="forget-show">
+                    <p class="show-pass f-s-element">
+                    <input type="checkbox" class="show" name="show-password" id="show-password"/>
+                    <label for="show-password">Show password</label>
+                </p>
+                    <a href="#forget" class=" f-s-element" id="forget-pass">Forgot Password?</a>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" id="submit">Login</button>
+                </div>
+                <div class="new">
+                    Don't have an Account? &nbsp;
+                    <a id="new-user" href="RegistrationForm.html">Create New</a>
+                </div>
+            </form>
+            </div>
+    </section>
+</main>
+    <script src="../scripts/scriptLogin.js"></script>
+</body>
+</html>
