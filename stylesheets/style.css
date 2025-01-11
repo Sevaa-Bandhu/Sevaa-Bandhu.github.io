@@ -10,7 +10,7 @@
 }
 
 :root {
-    --color1: rgb(219, 84, 97);
+    --color1: rgb(200, 71, 84);
     --color2: rgb(250, 208, 83);
     --hover2: rgb(227, 184, 55);
     --color3: rgb(13, 146, 167);
@@ -424,7 +424,7 @@ section.labour-cards-container .labour-cards .labour .details-contain {
 
 /* Footer */
 footer {
-    padding: 2% 2%;
+    padding: 1%;
     width: 100%;
     background: linear-gradient(55deg, rgba(0, 0, 0, 0.9) 59%, rgba(0, 0, 0, 0.95) 40%);
     user-select: text;
@@ -449,7 +449,7 @@ footer .footer-container .logo-tag {
         width: 75%;
         padding: 2vh;
         color: var(--color33);
-        font-size: 3vh;
+        font-size: 2.5vh;
         border-left: 1vh double var(--color3);
         border-bottom: 1vh double var(--color3);
         border-bottom-left-radius: 5vh;
@@ -463,7 +463,7 @@ footer .footer-container .quick-link {
     .sub-title {
         text-align: center;
         width: 15vw;
-        font-size: 4vh;
+        font-size: 3.5vh;
         color: var(--color33);
     }
 
@@ -472,7 +472,7 @@ footer .footer-container .quick-link {
         text-decoration: none;
         text-align: center;
         display: block;
-        padding: 3% 20% 2% 20%;
+        padding: 3% 10% 2% 10%;
         font-size: 2.8vh;
         color: var(--color33);
         border-bottom: 2px dotted var(--color3);
@@ -485,13 +485,14 @@ footer .footer-container .quick-link {
 }
 
 footer .footer-container .contact-foot {
-    font-size: 2.8vh;
+    font-size: 2.5vh;
     text-align: left;
 
     .merge {
+        width: 100%;
         display: inline-flex;
         gap: 3%;
-        line-height: 4vh;
+        line-height: 3.5vh;
         margin: 3% 0;
         color: var(--color33);
 
@@ -501,7 +502,7 @@ footer .footer-container .contact-foot {
     }
 
     .fa {
-        font-size: 5vh;
+        font-size: 4vh;
         color: rgba(13, 146, 167, 0.7);
     }
 
