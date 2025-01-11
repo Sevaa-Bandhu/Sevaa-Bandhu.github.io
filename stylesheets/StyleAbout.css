@@ -48,7 +48,7 @@ section.header{
             align-content: center;
 
             img{
-                max-width: 18%;
+                width: 20%;
                 float: left;
             }
         }
@@ -200,6 +200,9 @@ section.join-wrap .join-text{
         --headSize: 20px;
         --iconSize: 16px;
     }
+    section.header div.links a img{
+        width: 50%;
+    }
 
     section.container-intro header{
         margin-top: 5%;
@@ -209,8 +212,8 @@ section.join-wrap .join-text{
         margin-top: 1%;
         display: block;
         img{
-            height: 25vh;
-            width: 30vh;
+            height: 20vh;
+            width: 25vh;
             margin-left: 20%;
         }
     }
