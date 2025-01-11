@@ -201,6 +201,10 @@ section.join-wrap .join-text{
         --iconSize: 16px;
     }
 
+    section.container-intro header{
+        margin-top: 5%;
+    }
+
     section.container-what .what-category-wrap{
         margin-top: 1%;
         display: block;
