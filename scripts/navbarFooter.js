@@ -9,7 +9,7 @@ let topNavbar = `<div class="navbar">
             </div>
             <div class="nav-links-container" id="nav-links-container">
                 <a class="nav-item nav-links" id="nav-home" href="../index.html" target="_self">Home</a>
-                <a class="nav-item nav-links" id="nav-profile" href="#" target="_self">Profile</a>
+                <a class="nav-item nav-links" id="nav-profile" href="../html files/profile.html" target="_self">Profile</a>
                 <a class="nav-item nav-links" id="nav-help" href="../html files/Help.html" target="_self">Help</a>
                 <a class="nav-item nav-links" id="nav-about" href="../html files/AboutUs.html" target="_self">About</a>
             </div>
@@ -44,7 +44,7 @@ let bottomFooter = `<footer class="footer" id="footer">
                 <div class="link-container">
                     <a href="../index.html" id="quick-home" target="_self">
                         Home</a>
-                    <a href="#profile" id="quick-profile" target="_self">
+                    <a href="../html files/profile.html" id="quick-profile" target="_self">
                         Profile</a>
                     <a href="../html files/AboutUs.html" id="quick-about" target="_self">
                         About Us</a>
