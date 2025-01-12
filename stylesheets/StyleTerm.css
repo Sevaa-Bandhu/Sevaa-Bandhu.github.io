@@ -8,20 +8,20 @@
 }
 
 body {
-  min-height: 100vh;
-  padding: 0 12vw;
   align-items: center;
   justify-content: center;
   background: white;
 }
 
 #title {
+  margin-top: 6%;
   text-align: center;
   border-bottom: 4px double rgba(219, 84, 97, 0.5);
 }
 
-.container {
+div.container {
   margin: 2vh 0;
+  padding: 5%;
   font-size: 15px;
   padding: 20px 30px;
   border-radius: 8px;
@@ -37,11 +37,14 @@ h2 {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 0 10px;
     font-size: 14px;
+  }
+  #title {
+    font-size: 17px;
+    margin-top: 20%;
   }
   h2{
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
   }
 }

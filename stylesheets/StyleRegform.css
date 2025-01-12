@@ -9,10 +9,10 @@
 
 body {
   min-height: 100vh;
+  padding: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   background: rgb(238, 245, 243);
   font-family: "Poppins", sans-serif;
 }

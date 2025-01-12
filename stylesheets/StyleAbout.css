@@ -21,41 +21,10 @@
 
 body{
     background-color: var(--bkground);
-    padding: 5vw max(5vh, 7vw);
-}
-
-section.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--bkground);
-    box-shadow: 0 0 1vh var(--borderColor);
-
-    div.links{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        a{
-            width: 100%;
-            padding: 0 2%;
-            text-decoration: none;
-            float: right;
-            color: rgb(2, 117, 135);
-            font-size: var(--headSize);
-            text-align: right;
-            align-content: center;
-
-            img{
-                width: 20%;
-                float: left;
-            }
-        }
-    }
 }
 
 section.container-intro{
+    margin-top: 6%;
     width: 100%;
     font-size: var(--textSize);
     header{
@@ -197,7 +166,7 @@ section.join-wrap .join-text{
 @media screen and (max-width: 650px) {
     :root{
         --textSize: 12px;
-        --headSize: 20px;
+        --headSize: 19px;
         --iconSize: 16px;
     }
     section.header div.links a img{
@@ -205,7 +174,8 @@ section.join-wrap .join-text{
     }
 
     section.container-intro header{
-        margin-top: 5%;
+        margin-top: 18%;
+        font-size: var(--headSize);
     }
 
     section.container-what .what-category-wrap{
