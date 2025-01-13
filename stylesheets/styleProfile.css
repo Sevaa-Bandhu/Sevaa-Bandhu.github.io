@@ -101,10 +101,20 @@ section.user-details {
             font-size: var(--textSize);
         }
 
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
         input {
             width: 100%;
             padding: 2% 3%;
-            border: none;
+            border: 0 solid rgb(200, 71, 84);
             outline: none;
             border-radius: 2vw;
             background-color: rgba(200, 218, 222, 0.5);
@@ -113,27 +123,63 @@ section.user-details {
 }
 
 section.user-details div.control-op-btn {
+    display: block;
     width: 100%;
     padding: 2% 0;
     text-align: center;
 
-    button.control-btn{
-        margin: 0 5vw;
+    button.control-btn {
+        margin-left: 5%;
         padding: 1%;
         font-size: var(--textSize);
         font-weight: 500;
+        float: left;
         color: rgb(183, 64, 76);
         border: 3px solid rgb(183, 64, 76);
         border-radius: 4px;
         background-color: transparent;
-        transition: 300ms all ease-in-out;
+        transition: 250ms all ease-in-out;
     }
-    button.update{
+
+    button.update {
         display: none;
+    }
+
+    button.delete {
+        margin-left: 0;
+        margin-right: 5%;
+        float: right;
     }
 
     button.control-btn:hover,
     button.control-btn:focus {
+        border-radius: 4vh;
+        box-shadow: 5px 5px 1vh rgb(67, 67, 71);
+    }
+}
+
+div.confirm-del{
+    display: none;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: var(--textSize);
+    font-weight: 400;
+    background-color: rgba(71, 78, 80, 0.3);
+    box-shadow: 0 0 1vh rgb(231, 48, 63);
+
+    button.del-choice{
+        margin: 2%;
+        padding: 0.5%;
+        font-size: var(--textSize);
+        color: rgb(154, 39, 51);
+        border-radius: 5px;
+        border: 3px solid rgb(154, 39, 51);
+        background-color: transparent;
+        transition: 250ms all linear;
+    }
+    button.del-choice:hover,
+    button.del-choice:focus {
         border-radius: 4vh;
         box-shadow: 5px 5px 1vh rgb(67, 67, 71);
     }
@@ -154,7 +200,7 @@ section.user-details div.control-op-btn {
     section.side-bar {
         width: 25%;
         padding: 10% 1%;
-    
+
         .logo-rate img {
             padding: 2%;
             max-width: 90%;
@@ -163,26 +209,26 @@ section.user-details div.control-op-btn {
 
     section.user-details {
         padding: 0;
-    
+
         fieldset legend {
             padding: 2px 8px;
             border-radius: 3vh;
         }
-    
+
         fieldset {
             margin-top: 2vh;
             gap: 3%;
             padding: 1vh 1vh 2vh 1vh;
-    
+
             div {
                 margin-top: 1vh;
             }
-    
+
             label,
             input {
                 padding: 1%;
             }
-    
+
             input {
                 width: 99%;
                 padding: 1% 3%;
@@ -192,19 +238,25 @@ section.user-details div.control-op-btn {
     }
 
     section.user-details div.control-op-btn {
-    button.control-btn {
-        padding: 1%;
-        border: 2px solid rgb(183, 64, 76);
-        transition: 250ms all ease-in-out;
-    }
-    button.update{
-        display: none;
-    }
+        button.control-btn {
+            margin-left: 2%;
+            padding: 1%;
+            border: 2px solid rgb(183, 64, 76);
+            transition: 250ms all ease-in-out;
+        }
 
-    button.control-btn:hover,
-    button.control-btn:focus {
-        border-radius: 4vh;
-        box-shadow: 2px 2px 1vw rgb(67, 67, 71);
+        button.update {
+            display: none;
+        }
+
+        button.delete {
+            margin-right: 2%;
+        }
+
+        button.control-btn:hover,
+        button.control-btn:focus {
+            border-radius: 4vh;
+            box-shadow: 2px 2px 1vw rgb(67, 67, 71);
+        }
     }
-}
 }
