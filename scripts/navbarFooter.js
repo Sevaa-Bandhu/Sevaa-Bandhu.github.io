@@ -1,6 +1,8 @@
 let topNavbar = `<div class="navbar">
             <div class="nav-item" id="logo-menu" href="index.html">
-                <a href="index.html"><img src="../images/logo.png" class="logo-img" alt="logo"></a>
+                <a href="../index.html">
+                        <img src="../images/logo.png" class="logo-img" alt="logo">
+                </a>
                 <span class="fa-solid fa-bars" id="menu"></span>
             </div>
             <div class="nav-item log-sign-in" id="log-sign-in">
