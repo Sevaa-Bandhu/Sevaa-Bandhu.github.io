@@ -23,7 +23,7 @@ let bottomFooter = `<footer class="footer" id="footer">
                 </p>
                 <p class="mail merge">
                     <i class="fa fa-envelope"></i>
-                    <span>RozgaarBandhu@gmail.com</span>
+                    <span>SevaaBandhu@gmail.com</span>
                 </p>
                 <p class="phone merge">
                     <i class="fa fa-phone"></i>
@@ -31,7 +31,7 @@ let bottomFooter = `<footer class="footer" id="footer">
                 </p>
                 <p class="github merge">
                     <i class="fa fa-github"></i>
-                    <span>Github.com/Rozgaar-Bandu/Rozgaar-Bandhu.github.io</span>
+                    <span>Github.com/Sevaa-Bandu/Sevaa-Bandhu.github.io</span>
                 </p>
             </div>
 

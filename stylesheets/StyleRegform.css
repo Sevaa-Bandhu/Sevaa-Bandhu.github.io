@@ -17,6 +17,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+::-moz-selection{
+  background-color: #90b2e2;
+  color: rgb(200, 71, 84);
+}
+::selection{
+  background-color: #90b2e2;
+  color: rgb(200, 71, 84);
+}
+
 .container {
   position: relative;
   max-width: 700px;

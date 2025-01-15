@@ -20,6 +20,15 @@
     --color55: rgb(67, 67, 71);
 }
 
+::-moz-selection{
+    background-color: #90b2e2;
+    color: rgb(200, 71, 84);
+}
+::selection{
+    background-color: #90b2e2;
+    color: rgb(200, 71, 84);
+}
+
 body {
     background-color: var(--color4);
     min-height: 100vh;
