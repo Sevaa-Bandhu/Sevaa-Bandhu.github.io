@@ -7,7 +7,6 @@ Sevaa Bandhu is your trusted companion for bridging the gap between the Workers 
 The name *'Sevaa Bandhu'*, symbolizes a *'Friend for Employment Services'*. We aim to provide quick and hassle free services to the Clients and bulid a strong, connected and trusted community.
 
 ## Features
-
 - Supports Hindi and English
 - Cross platform
 - Hire workers for a project
