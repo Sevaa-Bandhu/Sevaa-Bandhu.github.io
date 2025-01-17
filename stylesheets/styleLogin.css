@@ -11,11 +11,12 @@ body {
     background-color: rgb(200, 218, 222);
 }
 
-::-moz-selection{
+::-moz-selection {
     background-color: #90b2e2;
     color: rgb(200, 71, 84);
 }
-::selection{
+
+::selection {
     background-color: #90b2e2;
     color: rgb(200, 71, 84);
 }
@@ -117,8 +118,15 @@ section.login-container .login-form {
             font-size: 1.3rem;
             color: rgb(238, 245, 243);
             background-color: rgb(2, 117, 135);
-            border-radius: 10px;
+            border-radius: 8px;
             border: none;
+            transition: 250ms all ease;
+        }
+
+        button:hover,
+        button:focus {
+            border-radius: 20px;
+            background-color: rgb(11, 96, 109);
         }
     }
 
@@ -137,10 +145,6 @@ section.login-container .login-form {
             color: rgb(2, 117, 135);
         }
     }
-
-    div.otp-container{
-        display: none;
-    }
 }
 
 input::-webkit-outer-spin-button,
@@ -148,9 +152,106 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-/* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+/* Forgot password container */
+section.forgot-pass-form {
+    display: none;
+    margin: auto;
+    width: max-content;
+    margin-top: 10%;
+
+    .logo-fgt {
+        display: block;
+        padding: 2%;
+        text-align: center;
+        text-decoration: none;
+
+        img {
+            width: 6rem;
+            height: 4rem;
+        }
+    }
+
+    form {
+        padding: 2% 3%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5vh rgb(109, 109, 109);
+    }
+}
+
+section.forgot-pass-form form .step {
+    padding: 5% 2%;
+    color: rgba(39, 39, 39, 0.9);
+
+    div {
+        margin-top: 5%;
+    }
+
+    label {
+        width: 100%;
+        padding: 1%;
+        font-size: 1rem;
+    }
+
+    input.fgt-input {
+        width: 100%;
+        padding: 1% 2%;
+        font-size: 1rem;
+        color: rgba(39, 39, 39, 0.9);
+        border: 2px solid rgb(2, 117, 135);
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+    }
+
+    button {
+        width: max-content;
+        padding: 0.5% 3%;
+        font-size: 1.1rem;
+        color: rgb(238, 245, 243);
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(2, 117, 135);
+        transition: 250ms all ease;
+    }
+    button:hover, button:focus{
+        border-radius: 20px;
+    }
+}
+
+section.forgot-pass-form form div.step-one {
+    display: none;
+
+    div.verify-send-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+    a#new-user{
+        text-decoration: underline;
+        color: rgb(2, 117, 135);
+        cursor: pointer;
+    }
+}
+
+section.forgot-pass-form form div.step-two {
+    display: none;
+
+    div.fgt-show-wrap input.show {
+        accent-color: rgb(13, 146, 167);
+    }
+
+    div.submit-btn-wrap{
+        text-align: center;
+    button{
+        width: 80%;
+    }
+}
 }
 
 @media screen and (max-width: 625px) {
@@ -226,10 +327,6 @@ input[type=number] {
             }
         }
 
-        div.otp-container{
-            display: none;
-        }
-
         div.forget-show {
             width: 80%;
             margin: auto;
@@ -248,4 +345,39 @@ input[type=number] {
             font-size: 0.7rem;
         }
     }
+
+    /* Forgot password container */
+section.forgot-pass-form {
+    padding: 1%;
+    display: none;
+    margin: auto;
+    width: 99vw;
+    margin-top: 10%;
+
+    .logo-fgt {
+        display: block;
+        padding: 2%;
+        text-align: center;
+
+        img {
+            width: 4rem;
+            height: 3rem;
+        }
+    }
+
+    form {
+        padding: 1%;
+    }
+}
+
+section.forgot-pass-form form .step {
+    div {
+        font-size: 0.9rem;
+        margin-top: 5%;
+    }
+
+    label, button, input.fgt-input {
+        font-size: 0.9rem;
+    }
+}
 }

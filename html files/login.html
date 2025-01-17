@@ -24,10 +24,11 @@
                     <br>
                     Login to Sevaa Bandhu
                 </legend>
+                
                 <form>
                     <div class="mobile-cotainer">
                         <i class="fa-solid fa-user"></i>
-                        <input class="mobile-input" type="number" name="mobile" id="mobile" placeholder="Mob. no."
+                        <input class="mobile-input" type="number" name="mobile" id="mobile" placeholder="Mobile no."
                             maxlength="10" required />
                     </div>
                     <div class="password-container" id="password-container">
@@ -40,14 +41,7 @@
                             <input type="checkbox" class="show" name="show-password" id="show-password" />
                             <label for="show-password">Show password</label>
                         </p>
-                        <a href="#forget" class=" f-s-element" id="forget-pass" onclick="showOTPcontain()">Forgot Password?</a>
-                    </div>
-                    
-                    <!--OTP container -->
-                    <div class="otp-container" id="otp-container">
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                        <input class="otp-input" type="number" name="otp" id="otp" placeholder="OTP" minlength="5"
-                            maxlength="6" />
+                        <a href="#forget" class=" f-s-element" id="forget-pass">Forgot Password?</a>
                     </div>
 
                     <div class="submit-btn">
@@ -61,8 +55,53 @@
             </div>
         </section>
 
-        <section class="forgot-container" id="forgot-container">
+        <!-- Forgot password form -->
+        <section class="forgot-pass-form" id="forgot-pass-form">
+            <a class="logo-fgt" href="../index.html" target="_self">
+                <img src="../images/icon.ico" alt="logo" class="icon-img">
+            </a>
+
+            <form id="forgot-form">
+                <div class="step-one step" id="step-one">
+                <div class="fgt-mob-wrap">
+                    <label for="fgt-mob-input">Mobile Number</label>
+                    <input class="fgt-mob-input fgt-input" type="number" name="mobile" id="fgt-mob-input" maxlength="10" required/>
+                </div>
+                <div class="fgt-otp-wrap">
+                    <label for="fgt-otp-input">Enter OTP</label>
+                    <input type="number" class="fgt-otp-input fgt-input" id="fgt-otp-input" size="6" maxlength="6" required />
+                </div>
+                <div class="verify-send-wrap">
+                    <button type="button" class="send-otp" id="send-otp">Send OTP</button>
+                    <button type="button" class="verify-btn" id="verify-btn" onclick="nextStep()">Verify</button>
+                </div>
+                <div class="new">
+                    Don't have an Account?&nbsp;
+                    <a id="new-user" href="RegistrationForm.html">Create New</a>
+                </div>
+            </div>
+
+            <div class="step-two step" id="step-two">
+                <div class="create-pass-wrap">
+                    <label for="create-pass">Create New Password</label>
+                    <input type="password" class="fgt-input" name="create-pass" id="create-pass" minlength="10" required/>
+                </div>
+                <div class="match-pass-wrap">
+                    <label for="match-pass">Confirm Password</label>
+                    <input type="password" class="fgt-input" name="match-pass" id="match-pass" minlength="10" required/>
+                </div>
+                <div class="fgt-show-wrap">
+                    <input type="checkbox" class="show" name="show-fgt-pass" id="show-fgt-pass" />
+                    <label for="show-fgt-pass">Show password</label>
+                </div>
+                <div class="submit-btn-wrap">
+                    <button type="submit" class="submit-btn-fgt" id="submit-btn-fgt">Update Password</button>
+                </div>
+            </div>
+            </form>
         </section>
+
+        <section class="forgot-container" id="forgot-container"></section>
     </main>
     <script src="../scripts/scriptLogin.js"></script>
 </body>
