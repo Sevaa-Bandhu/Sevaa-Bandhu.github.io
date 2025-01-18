@@ -20,11 +20,12 @@
     --color55: rgb(67, 67, 71);
 }
 
-::-moz-selection{
+::-moz-selection {
     background-color: #90b2e2;
     color: rgb(200, 71, 84);
 }
-::selection{
+
+::selection {
     background-color: #90b2e2;
     color: rgb(200, 71, 84);
 }
@@ -43,19 +44,6 @@ nav .second-nav {
     width: 100%;
     background: radial-gradient(circle, rgba(27, 27, 28, 0.9) 0%, rgba(0, 0, 0, 1) 60%);
     min-height: 45px;
-
-    .fa-language {
-        margin: auto;
-        float: left;
-        padding: 0.9vh 3vh;
-        font-size: 15px;
-        color: var(--color33);
-        background-color: transparent;
-        outline: none;
-        border: 3px solid var(--color33);
-        border-radius: 1vh;
-        transition: 250ms all;
-    }
 
     .search-query {
         width: 40%;
@@ -79,13 +67,62 @@ nav .second-nav {
         border-radius: 3vh;
     }
 
-    .fa-language:hover,
-    .fa-language:focus,
     .go-search:hover,
     .go-search:focus {
         background-color: var(--color55);
     }
 }
+
+/*Google translate*/
+#google_translate_element {
+    background-color: transparent;
+    border: none;
+}
+
+iframe.skiptranslate {
+    display: none !important;
+}
+
+.skiptranslate.goog-te-gadget select {
+    position: relative !important;
+    top: 0 !important;
+    position: relative !important;
+    padding: 5px 0 !important;
+    border-radius: 5px !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--color4);
+    border: 2px solid var(--color4);
+}
+
+.skiptranslate.goog-te-gadget span {
+    display: none !important;
+    font-size: 0;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+    margin-top: 0;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+
 
 /* Navigation bar */
 nav div.navbar {
@@ -190,6 +227,7 @@ section.intro .intro-text {
     border-left: 1vw solid var(--color55);
 
     .description {
+        font-weight: 800;
         font-size: 4vh;
 
         big {
@@ -523,16 +561,13 @@ footer .footer-container .contact-foot {
         .second-nav {
             background: transparent;
 
-            .fa-language {
-                padding: 1.7vw 2vw;
-                font-size: 12px;
-                border-radius: 7px;
-            }
-
             .search-query,
             .go-search {
                 font-size: 2.2vh;
             }
+        }
+        .skiptranslate.goog-te-gadget select{
+            width: 30vw;
         }
 
         div.navbar {
@@ -619,7 +654,8 @@ footer .footer-container .contact-foot {
         width: 100%;
         font-size: 3vh;
     }
-    section.why .why-container .reason p.res-desp{
+
+    section.why .why-container .reason p.res-desp {
         font-size: 2.5vh;
     }
 

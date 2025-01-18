@@ -26,22 +26,6 @@ const showMenu = () => {
 
 btnMenu.addEventListener("click", showMenu);
 
-//toggle the Search bar in navigation bar
-let secondNavbar = document.querySelector('#search-item');
-let translate = document.querySelector('#fa-language');
-let langStatus = " हिंदी";
-const toggleTranslate = () => {
-    if(langStatus === ' हिंदी'){
-        langStatus = ' English';
-        translate.innerText = langStatus;
-    }
-    else{
-        langStatus = ' हिंदी';
-        translate.innerText = langStatus;
-    }
-};
-translate.addEventListener("click", toggleTranslate);
-
 //underlining the active link
 let active = document.querySelectorAll(".nav-links");
 const highlightNavLink = (requestActive) => {
@@ -55,4 +39,13 @@ for(let activeItem of active){
     activeItem.addEventListener("click", () => {
         highlightNavLink(activeItem);
     });
+}
+
+// Google translation
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: 'false',
+    includedLanguages:'hi,en,mr,pa,ta,kn,ml',
+    }, 'google_translate_element');
 }
