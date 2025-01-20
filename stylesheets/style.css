@@ -92,6 +92,7 @@ iframe.skiptranslate {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--color4);
     border: 2px solid var(--color4);
+    outline: none;
 }
 
 .skiptranslate.goog-te-gadget span {

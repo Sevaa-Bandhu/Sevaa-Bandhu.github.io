@@ -10,6 +10,7 @@ let topNavbar = `<div class="navbar">
                 <button class="reg" id="reg" type="button" onclick="window.open('../html files/RegistrationForm.html', '_self')">Register</button>
             </div>
             <div class="nav-links-container" id="nav-links-container">
+                <a class="nav-item nav-links" id="google_translate_element"></a>
                 <a class="nav-item nav-links" id="nav-home" href="../index.html" target="_self">Home</a>
                 <a class="nav-item nav-links" id="nav-profile" href="../html files/profile.html" target="_self">Profile</a>
                 <a class="nav-item nav-links" id="nav-help" href="../html files/Help.html" target="_self">Help</a>
@@ -18,7 +19,7 @@ let topNavbar = `<div class="navbar">
         </div>`;
 let bottomFooter = `<footer class="footer" id="footer">
         <div class="footer-container">
-            <div class="contact-foot element">
+            <div class="contact-foot element notranslate">
                 <p class="address merge">
                     <i class="fa fa-map-marker"></i>
                     <span>School of Electronics, DAVV University, Indore, Madhya Pradesh</span>
@@ -66,9 +67,9 @@ document.querySelector("#footer").innerHTML = bottomFooter;
 
 // show menu options if screen in not phone
 window.addEventListener('resize', () => {
-    if(window.innerWidth > '625'){
-        btnLogin.style.display='inline-flex';
-        navLinks.style.display='block';
+    if (window.innerWidth > '625') {
+        btnLogin.style.display = 'inline-flex';
+        navLinks.style.display = 'block';
         menuStatus = 'show';
     }
 });
@@ -78,15 +79,26 @@ const navLinks = document.querySelector('#nav-links-container');
 let btnMenu = document.querySelector('#menu');
 let menuStatus = 'none';
 const showMenu = () => {
-    if(menuStatus == 'none'){
-        btnLogin.style.display='inline-flex';
-        navLinks.style.display='block';
+    if (menuStatus == 'none') {
+        btnLogin.style.display = 'inline-flex';
+        navLinks.style.display = 'block';
         menuStatus = 'show';
     }
-    else{
-        btnLogin.style.display='none';
-        navLinks.style.display='none';
+    else {
+        btnLogin.style.display = 'none';
+        navLinks.style.display = 'none';
         menuStatus = 'none';
     }
 };
 btnMenu.addEventListener("click", showMenu);
+
+
+// Google translation
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: 'true',
+        includedLanguages: 'hi,en,mr,pa,ta,kn,ml',
+    }, 'google_translate_element');
+}
+

@@ -45,7 +45,7 @@ for(let activeItem of active){
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
     pageLanguage: 'en',
-    autoDisplay: 'false',
+    autoDisplay: 'true',
     includedLanguages:'hi,en,mr,pa,ta,kn,ml',
     }, 'google_translate_element');
 }

@@ -35,8 +35,8 @@ nav div.navbar {
     }
 }
 
-nav div.navbar .nav-item:not(#logo):hover,
-.nav-item:not(#logo):focus {
+nav div.navbar .nav-item:not(#logo #google_translate_element):hover,
+.nav-item:not(#logo #google_translate_element):focus {
     text-shadow: 1px 1px #4e75ac;
 }
 
@@ -94,6 +94,58 @@ nav div.navbar .log-sign-in {
     .reg:hover {
         text-shadow: 0 0 0.1vh rgb(13, 146, 167);
     }
+}
+
+/*Google translate*/
+#google_translate_element {
+    background-color: transparent;
+    border: none;
+}
+
+iframe.skiptranslate {
+    display: none !important;
+}
+
+.skiptranslate.goog-te-gadget select {
+    position: relative !important;
+    top: 0 !important;
+    position: relative !important;
+    padding: 5px 0 !important;
+    border-radius: 5px !important;
+    background-color: transparent;
+    color: rgb(2, 117, 135);
+    border: 2px solid rgb(2, 117, 135);
+    outline: none;
+}
+
+.skiptranslate.goog-te-gadget span {
+    display: none !important;
+    font-size: 0;
+}
+.skiptranslate.goog-te-gadget{
+    font-size: 0;
+}
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+    margin-top: 0;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
 }
 
 /* Footer */
