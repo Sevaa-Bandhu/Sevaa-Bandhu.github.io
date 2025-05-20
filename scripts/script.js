@@ -61,9 +61,3 @@ fetch('https://sevaa-bandhu-github-io.onrender.com/api/login_data')
         // You can now display this data in your HTML dynamically
     })
     .catch(error => console.error('Error:', error));
-    .then(response => response.json())
-    .then(data => {
-        console.log('Fetched from MongoDB:', data);
-        // You can now display this data in your HTML dynamically
-    })
-    .catch(error => console.error('Error:', error));
