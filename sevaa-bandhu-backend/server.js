@@ -8,7 +8,7 @@ const port = 3000;
 
 app.use(cors({origin: 'https://sevaa-bandhu.github.io'}));
 
-app.get('/api/resources', async (req, res) => {
+app.get('/api/login_data', async (req, res) => {
     const client = new MongoClient('mongodb+srv://bhushanharode0246:26HsL8YbWjVs3NMf@cluster0.7ilff6h.mongodb.net/');
 
     try {
