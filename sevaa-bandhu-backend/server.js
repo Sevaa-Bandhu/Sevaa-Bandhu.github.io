@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(cors({origin: 'https://sevaa-bandhu.github.io'}));
 
 app.get('/api/data', async (req, res) => {
     const client = new MongoClient(process.env.MONGO_URI);
