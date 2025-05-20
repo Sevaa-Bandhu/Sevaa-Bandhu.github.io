@@ -1,8 +1,8 @@
 // show menu options if screen in not phone
 window.addEventListener('resize', () => {
-    if(window.innerWidth > '625'){
-        btnLogin.style.display='inline-flex';
-        navLinks.style.display='block';
+    if (window.innerWidth > '625') {
+        btnLogin.style.display = 'inline-flex';
+        navLinks.style.display = 'block';
         menuStatus = 'show';
     }
 });
@@ -12,14 +12,14 @@ const navLinks = document.querySelector('#nav-links-container');
 let btnMenu = document.querySelector('#menu');
 let menuStatus = 'none';
 const showMenu = () => {
-    if(menuStatus == 'none'){
-        btnLogin.style.display='inline-flex';
-        navLinks.style.display='block';
+    if (menuStatus == 'none') {
+        btnLogin.style.display = 'inline-flex';
+        navLinks.style.display = 'block';
         menuStatus = 'show';
     }
-    else{
-        btnLogin.style.display='none';
-        navLinks.style.display='none';
+    else {
+        btnLogin.style.display = 'none';
+        navLinks.style.display = 'none';
         menuStatus = 'none';
     }
 };
@@ -31,11 +31,11 @@ let active = document.querySelectorAll(".nav-links");
 const highlightNavLink = (requestActive) => {
     let currActive = document.querySelector(".active-nav-link");
     let reqId = requestActive.getAttribute("id");
-        requestActive.classList.add("active-nav-link");
-        if(currActive != requestActive)
-            currActive.classList.remove("active-nav-link");
+    requestActive.classList.add("active-nav-link");
+    if (currActive != requestActive)
+        currActive.classList.remove("active-nav-link");
 };
-for(let activeItem of active){
+for (let activeItem of active) {
     activeItem.addEventListener("click", () => {
         highlightNavLink(activeItem);
     });
@@ -44,8 +44,17 @@ for(let activeItem of active){
 // Google translation
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    autoDisplay: 'true',
-    includedLanguages:'hi,en,mr,pa,ta,kn,ml',
+        pageLanguage: 'en',
+        autoDisplay: 'true',
+        includedLanguages: 'hi,en,mr,pa,ta,kn,ml',
     }, 'google_translate_element');
 }
+
+// fetching data from test_database
+fetch('mongodb+srv://bhushanharode0246:26HsL8YbWjVs3NMf@cluster0.7ilff6h.mongodb.net/')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Fetched from MongoDB:', data);
+        // You can now display this data in your HTML dynamically
+    })
+    .catch(error => console.error('Error:', error));
