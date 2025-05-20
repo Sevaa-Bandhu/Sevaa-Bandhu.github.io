@@ -51,7 +51,7 @@ function googleTranslateElementInit() {
 }
 
 // fetching data from test_database
-fetch('https://sevaa-backend.onrender.com/api/resources')
+fetch('https://sevaa-bandhu-github-io.onrender.com/api/resources')
     .then(response => {
     if (!response.ok) throw new Error("Network response was not OK");
     return response.json();
