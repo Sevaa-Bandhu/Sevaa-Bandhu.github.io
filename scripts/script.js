@@ -51,7 +51,16 @@ function googleTranslateElementInit() {
 }
 
 // fetching data from test_database
-fetch('https://sevaa-bandhu-github-io.onrender.com')
+fetch('https://sevaa-backend.onrender.com/api/resources')
+    .then(response => {
+    if (!response.ok) throw new Error("Network response was not OK");
+    return response.json();
+  })
+    .then(data => {
+        console.log('Fetched from MongoDB:', data);
+        // You can now display this data in your HTML dynamically
+    })
+    .catch(error => console.error('Error:', error));
     .then(response => response.json())
     .then(data => {
         console.log('Fetched from MongoDB:', data);
