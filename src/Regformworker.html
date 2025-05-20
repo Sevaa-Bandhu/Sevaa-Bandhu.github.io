@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--<title>Registration Form in HTML CSS</title>-->
+  <!---Custom CSS File--->
+  <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+  <link rel="stylesheet" media="screen" href="../stylesheets/StyleRegformworker.css" />
+</head>
+
+<body>
+  <section class="container">
+    <header>Worker Details/ श्रमिक विवरण</header>
+    <form action="#" class="form">
+      <div class="work-box">
+        <h3>Work Field (Please select)/
+          आपका कार्यक्षेत्र (कृपया चयन करें) *</h3>
+        <div class="work-option">
+          <select required>
+            <option hidden>Choose Field/कार्यक्षेत्र चुनें</option>
+            <option>Mason/राजमिस्त्री</option>
+            <option>Domestic Help/घरेलू कामगार</option>
+            <option>Electrician/इलेक्ट्रीशियन</option>
+            <option>Carpenter/बढ़ई</option>
+            <option>Plumber/प्लंबर</option>
+            <option>Gardener/माली</option>
+            <option>Other/अन्य</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Work Experience (in years)/कार्य अनुभव (वर्षों में) *</label>
+        <input type="number" required placeholder="Work Experience/आपका कार्य अनुभव">
+      </div>
+
+      <div class="input-box">
+        <label>Previous Projects/Work (Short detail)/ पिछले प्रोजेक्ट्स/कार्य (संक्षिप्त विवरण) *</label>
+        <input type="text" required placeholder="previous work/आपका पिछला काम">
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Expected Daily Wages(in ₹)/अपेक्षित प्रति दिन मजदूरी(₹ में)</label>
+          <input type="number">
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Please Upload Required Documents/कृपया आवश्यक दस्तावेज अपलोड करें *</label>
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Identity Proof(Aadhar Card/Voter ID/PAN Card)/ पहचान प्रमाण (आधार कार्ड/वोटर आईडी/पैन कार्ड) *</label>
+          <input type="file" accept="image/*" required />
+          <label>Passport Size Photo/पासपोर्ट साइज फोटो</label>
+          <input type="file" accept="image/*" required />
+        </div>
+      </div>
+      <button type="submit" id="next">Save Details/ विवरण सहेजें</button>
+    </form>
+  </section>
+</body>
+
+</html>

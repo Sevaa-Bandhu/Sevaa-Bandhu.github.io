@@ -54,7 +54,7 @@ let generatedotp;
       // OTP matches
       if (role === "check-worker") {
         // Redirect to Labourer page
-        window.location.href = "../html files/Regformworker.html";
+        window.location.href = "../src/Regformworker.html";
       } else if (role === "check-client") {
         // Save Client details or show a success message
         alert("Client details saved successfully!");
