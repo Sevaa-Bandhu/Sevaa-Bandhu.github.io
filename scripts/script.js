@@ -51,7 +51,7 @@ function googleTranslateElementInit() {
 }
 
 // fetching data from test_database
-fetch('mongodb+srv://bhushanharode0246:26HsL8YbWjVs3NMf@cluster0.7ilff6h.mongodb.net/')
+fetch('https://sevaa-bandhu-github-io.onrender.com')
     .then(response => response.json())
     .then(data => {
         console.log('Fetched from MongoDB:', data);
